@@ -1,0 +1,17 @@
+{
+  "name": "smartgarden-rasp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cron": "^1.7.2",
+    "dotenv": "^8.2.0",
+    "node-dht-sensor": "^0.4.0",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "start": "node init.js",
+    "dev": "nodemon -x \"node init.js\"",
+    "dev::deploy": "nodemon -x \"./update.sh \""
+  }
+}
